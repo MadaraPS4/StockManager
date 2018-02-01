@@ -1,0 +1,59 @@
+﻿<Window x:Class="StockManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StockManager"
+        mc:Ignorable="d"
+        Title="Cклад"
+        Height="350" Width="525">
+    <Grid Background="#FFFBDF61">
+        <DataGrid x:Name="dataGrid" IsReadOnly="true" ColumnWidth="*" CanUserAddRows="false" ItemsSource="{Binding items}" HorizontalAlignment="Stretch" Margin="10,32,45,27" VerticalAlignment="Stretch" Height="260" Width="462">
+        </DataGrid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="517" Background="#FFFBDF61" >
+            <MenuItem Header="Добавить" Background="#FFB1D2F3">
+                <MenuItem Header="Помидоры">
+                        <MenuItem Header="1 шт." Click="MenuItem_Click"></MenuItem>
+                        <MenuItem Header= "5 шт." Click="MenuItem_Click_1"></MenuItem>
+                        <MenuItem Header="10 шт." Click="MenuItem_Click_2"></MenuItem>
+                        <MenuItem Header="100 шт." Click="MenuItem_Click_3"></MenuItem>
+                        <MenuItem Header="1000 шт." Click="MenuItem_Click_4"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Картошка">
+                        <MenuItem Header="1 шт." Click="MenuItem_Click_5"></MenuItem>
+                        <MenuItem Header= "5 шт." Click="MenuItem_Click_6"></MenuItem>
+                        <MenuItem Header="10 шт." Click="MenuItem_Click_7"></MenuItem>
+                        <MenuItem Header="100 шт." Click="MenuItem_Click_8"></MenuItem>
+                        <MenuItem Header="1000 шт." Click="MenuItem_Click_9"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Рис">
+                        <MenuItem Header="1 шт." Click="MenuItem_Click_10"></MenuItem>
+                        <MenuItem Header= "5 шт." Click="MenuItem_Click_13" ></MenuItem>
+                        <MenuItem Header="10 шт." Click="MenuItem_Click_11"></MenuItem>
+                        <MenuItem Header="100 шт." Click="MenuItem_Click_12"></MenuItem>
+                        <MenuItem Header="1000 шт." Click="MenuItem_Click_14"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Капуста">
+                        <MenuItem Header="1 шт." Click="MenuItem_Click_15"></MenuItem>
+                        <MenuItem Header= "5 шт." Click="MenuItem_Click_16"></MenuItem>
+                        <MenuItem Header="10 шт." Click="MenuItem_Click_17"></MenuItem>
+                        <MenuItem Header="100 шт." Click="MenuItem_Click_18"></MenuItem>
+                        <MenuItem Header="1000 шт." Click="MenuItem_Click_19"></MenuItem>
+                    </MenuItem>
+                <MenuItem Header="Тыква">
+                    <MenuItem Header="1 шт." Click="MenuItem_Click_20"></MenuItem>
+                    <MenuItem Header= "5 шт." Click="MenuItem_Click_21"></MenuItem>
+                    <MenuItem Header="10 шт." Click="MenuItem_Click_22"></MenuItem>
+                    <MenuItem Header="100 шт." Click="MenuItem_Click_23"></MenuItem>
+                    <MenuItem Header="1000 шт." Click="MenuItem_Click_24"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Отсоритрвать" Background="#FF91EC24">
+                <MenuItem Header="По-названию" Click="MenuItem_Click_26"></MenuItem>
+                <MenuItem Header="По-количеству" Click="MenuItem_Click_27"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Удалить" Background="#FFEC9898" Click="MenuItem_Click_25">
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
